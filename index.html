@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-white d-flex justify-content-end">
+        <section class="details col-2 d-flex py-4 px-2 justify-content-between align-items-center">
+            <h4>
+                Invoice Details
+            </h4>
+            <div class="icon">
+                <i class="fas fa-tools"></i>
+            </div>
+        </section>
+        <section class="main-info col-10 d-flex align-items-center py-4">
+            <ul class="list-inline d-flex align-items-center my-0 col-12">
+                <li class="list-inline-item col-1 mx-4 my-0">
+                    Client Name 
+                </li>
+                <li class="list-inline-item col-1 mx- my-0">
+                    Loe Toll
+                </li>
+                <li class="list-inline-item text-end col-8 mx- my-0 ">19/10/2021</li>
+            </ul>
+        </section>
+    </header>
+    <section class="main">
+        <section class="main-content shadow-lg">
+            <section class="button-click d-flex align-items-end flex-column py-4 px-2">
+                <button class="btn col-3 btn-success" id="show-input">Add New Product</button>
+            </section>
+            <article id="main">
+                <div class="product-info ps-2 col-12 d-flex justify-content-between my-4">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="product-name col-4">
+                            <h5 class="col-12">Product Name</h5>
+                            <input class="col-12" type="text" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="quantity col-1">
+                            <h5 class="col-12 display-sm-4">Qty</h5>
+                            <input class="col-12" type="number" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="price col-1">
+                            <h5 class="col-12 display-sm-4">Price</h5>
+                            <input class="col-12" type="text" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="total-price col-3">
+                            <h5 class="col-12">Total</h5>
+                            <input type="text" class="col-12" readonly />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </div>
+                  <div class="product-info ps-2 col-12 d-flex justify-content-between my-4">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="product-name col-4">
+                            <h5 class="col-12">Product Name</h5>
+                            <input class="col-12" type="text" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="quantity col-1">
+                            <h5 class="col-12 display-sm-4">Qty</h5>
+                            <input class="col-12" type="number" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="price col-1">
+                            <h5 class="col-12 display-sm-4">Price</h5>
+                            <input class="col-12" type="text" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="total-price col-3">
+                            <h5 class="col-12">Total</h5>
+                            <input type="text" class="col-12" readonly />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </div>
+                  <div class="product-info ps-2 col-12 d-flex justify-content-between my-4">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="product-name col-4">
+                            <h5 class="col-12">Product Name</h5>
+                            <input class="col-12" type="text" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="quantity col-1">
+                            <h5 class="col-12 display-sm-4">Qty</h5>
+                            <input class="col-12" type="number" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="price col-1">
+                            <h5 class="col-12 display-sm-4">Price</h5>
+                            <input class="col-12" type="text" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="total-price col-3">
+                            <h5 class="col-12">Total</h5>
+                            <input type="text" class="col-12" readonly />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </div>
+            </article>
+            <section class="discount d-flex col-12 flex-column pb-4 pe-3">
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>Discount %</h5>
+                    <input type="text" />
+                  </td>
+                </tr>
+              </tbody>
+            </section>
+            <section class="total-content col-12 d-flex align-items-end flex-column">
+                <tbody>
+                    <tr>
+                      <td>
+                        <div class="subtotal col-3 mt-4 d-flex justify-content-between align-items-center">
+                          <h4 class=" col-4">Sub Total</h4>
+                          <input class=" col-7" type="text" readonly />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="total-discount col-3 mt-4 d-flex justify-content-between align-items-center">
+                          <h4 class="col-4">Total Discount</h4>
+                          <input class="col-7" type="text" readonly />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="total d-flex col-3 mt-4 justify-content-between align-items-center">
+                          <h4 class="col-4">Total</h4>
+                          <input class="col-7" type="text" readonly />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+            </section>
+        </section>
+    </section>
+    <footer class="mb-5 shadow-sm">
+<section class="footer-contain">
+<div class="footer-contain-heading">
+    <h4 class=" my-0 d-flex align-items-center justify-content-between">
+        Code with love <sub><3</sub>
+    </h4>
+</div>
+</section>
+
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
